@@ -1,8 +1,27 @@
 {
   "@context": {
-     "dc": "http://purl.org/dc/elements/1.1/"
+     "@base": "http://purl.org/versum/evidence/",
+     "dc":    "http://purl.org/dc/elements/1.1/",
+     "rdfs":  "http://www.w3.org/2000/01/rdf-schema#"
   },
-  "@id": "http://purl.org/versum/evidence",
+  "@id": "",
   "dc:title": "Versum Evidence",
-  "dc:description": "Vocabulary to annotate evidence in versum."
+  "dc:description": "Vocabulary to annotate evidence in versum.",
+  "@graph": [
+     {"@id": "Finding",
+      "@type": "rdfs:Class",
+      "dc:title": "finding"},
+     {"@id": "key_finding",
+      "@type": "Finding",
+      "dc:title": "key finding"},
+     {"@id": "corroborate_finding",
+      "@type": "Finding",
+      "dc:title": "finding that corroborates"},
+     {"@id": "neutral_finding",
+      "@type": "Finding",
+      "dc:title": "neutral finding"},
+     {"@id": "against_hypothesis",
+      "@type": "Finding",
+      "dc:title": "against hypothesis"}
+   ]
 }

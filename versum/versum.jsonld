@@ -1,8 +1,32 @@
 {
   "@context": {
-     "dc": "http://purl.org/dc/elements/1.1/"
-  },
-  "@id": "http://purl.org/versum",
+     "@base": "http://purl.org/versum/",
+     "dc":    "http://purl.org/dc/elements/1.1/",
+     "xsd":  "http://www.w3.org/2001/XMLSchema#",
+     "rdf":  "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+     "owl":  "http://www.w3.org/2002/07/owl#",
+     "evd":  "http://purl.org/versum/evidence/"},
+  "@id": "",
   "dc:title": "Versum Narrative Scripting Language",
-  "dc:description": "Versum is a narrative scripting language derived from Markdown, having narrative structures inspired in Ink."
+  "dc:description": "Versum is a narrative scripting language derived from Markdown, having narrative structures inspired in Ink.",
+  "@graph": [
+     {"@id": "undefined",
+      "dc:title": "undefined value"},
+     {"@id": "States_vocabulary",
+      "@type": "rdfs:Class",
+      "dc:title": "states vocabulary"},
+     {"@id": "state",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": "States_vocabulary"},
+     {"@id": "label",
+      "@type": "owl:DataProperty",
+      "@range": "xsd:string",
+      "rdfs:domain": "States_vocabulary",
+      "rdfs:subPropertyOf": "rdfs:label"},
+     {"@id": "color",
+      "@type": "owl:DataProperty",
+      "@range": "xsd:string",
+      "rdfs:domain": "States_vocabulary"}
+   ]
 }
