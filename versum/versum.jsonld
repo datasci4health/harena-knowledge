@@ -27,6 +27,10 @@
      {"@id": "color",
       "@type": "owl:DataProperty",
       "@range": "xsd:string",
+      "rdfs:domain": "States_vocabulary"},
+     {"@id": "symbol",
+      "@type": "owl:DataProperty",
+      "@range": "xsd:string",
       "rdfs:domain": "States_vocabulary"}
    ]
 }
