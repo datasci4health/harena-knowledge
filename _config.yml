@@ -1,1 +1,13 @@
-theme: jekyll-theme-hacker
+title: Harena Knowledge
+author:
+  name: Harena Team
+description: >
+  Here you will find the Harena knowledge datasets.
+
+show_excerpts: false
+
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+theme: minima
